@@ -1,0 +1,13 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: bank
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db5?useUnicode=true&characterEncoding=UTF-8&&serverTimezone=Asia/Shanghai
+    username: root
+    password: 2323
+mybatis-plus: # 作用：可以看到sql语句得执行
+ configuration:
+  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #仅控制台输出的日志
